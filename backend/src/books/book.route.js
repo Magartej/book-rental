@@ -14,12 +14,6 @@ const { hasPermission, PERMISSIONS } = require("../middleware/roles");
 
 const router = express.Router();
 
-// frontend => backend server => controller => book schema  => database => send to server => back to the frontend
-//post = when submit something fronted to db
-// get =  when get something back from db
-// put/patch = when edit or update something
-// delete = when delete something
-
 // post a book (Admin only)
 router.post(
   "/create-book",
